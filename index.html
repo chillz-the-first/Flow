@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4285f4">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/utilities.css">
+    <title>Flow | Express Yourself</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar-container">
+        <div class="navbar container">
+            <h1>Flow</h1>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-container">
+        <div class="hero container">
+            <div class="hero-txt">
+                <h1>We're Coming Soon</h1>
+                <p>Hello Creators! We're are currently building our new platform. Please add your email below to stay 
+                    up-to-date with announcements and our launch deals.
+                </p>
+            </div>
+            <div class="hero-form card">
+                <h2>Submit your email address.</h2>
+                <form name="contact" method="POST" data-netlify="true">
+                    <div class="form-control">
+                        <input type="text" name="name" placeholder="Name" required>
+                    </div>
+                    <div class="form-control">
+                        <input type="text" name="company" placeholder="Type of Art" required>
+                    </div>
+                    <div class="form-control">
+                        <input type="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-control">
+                        <input type="checkbox" name="TandC" id="checkbox" required>
+                        By signing up for our email list,you agree to the <a href="?" id="agree">Terms & Conditions</a>
+                    </div>
+                    <input type="submit" value="Send" class="btn btn-primary">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features SEction -->
+    <section class="features-container">
+        <div class="features container">
+            <h2>Upcoming Features</h2>
+            <div class="card-container">
+                <div class="block card">
+                    <div class="block-txt">
+                        <h3>Create your own space.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime voluptas
+                             quo autem illum quas rerum illo, fugiat esse minima magni!
+                        </p>
+                    </div>
+                    <div class="block-img">
+                        <img src="Assets/undraw_art_museum_-8-or4.svg" id="Create">
+                    </div>
+                </div>
+
+                <div class="block card">
+                    <div class="block-txt embrace-txt">
+                        <h3>Embrace Art.</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                             Quisquam harum, adipisci sit soluta assumenda odio.
+                        </p>
+                    </div>
+                    <div class="block-img">
+                        <img src="Assets/undraw_art_lover_re_fn8g.svg" id="Embrace">
+                    </div>
+                </div>
+
+                <div class="block card">
+                    <div class="block-txt">
+                        <h3>Generate your portfolio.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                             Quia nam minima reprehenderit sapiente perspiciatis, voluptatibus
+                              inventore ipsam veniam dignissimos exercitationem debitis dicta?
+                        </p>
+                    </div>
+                    <div class="block-img">
+                        <img src="Assets/undraw_portfolio_website_re_jsdd.svg" id="portfolio">
+                    </div>
+                </div>
+
+                <div class="block card">
+                    <div class="block-txt store-txt">
+                        <h3>Your own online store.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                             Culpa labore iste eos doloremque facilis dolore omnis voluptates molestias!
+                        </p>
+                    </div>
+                    <div class="block-img">
+                        <img src="Assets/undraw_web_shopping_re_owap.svg" id="Store">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="foot-container">
+        <div class="foot container">
+            <h1>Flow</h1>
+            <div class="bottom-links">
+                <ul class="foot-links">
+                    <li><a href="?">Contact</a></li>
+                    <li><a href="?">FAQ</a></li>
+                    <li><a href="?">Affiliate</a></li>
+                </ul>
+                <ul class="foot-links">
+                    <li><a href="?"><img src="Assets/linkedin.svg">LinkedIn</a></li>
+                    <li><a href="?"><img src="Assets/twitter.svg">Twitter</a></li>
+                    <li><a href="?"><img src="Assets/instagram.svg">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="flow.js"></script>
+</body>
+</html>

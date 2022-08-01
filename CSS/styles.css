@@ -1,0 +1,270 @@
+:root {
+    --primary-color: #4285f4;
+    --secondary-color: #a2c3fa;
+    --tertiary-color: #1266f1;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+nav {
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-color);
+}
+
+.navbar h1 {
+    color: #fff;
+}
+
+/* Hero Section */
+.hero-container {
+    width: 100%;
+    height: 100%;
+    border-bottom-left-radius: 150px;
+    background-color: var(--primary-color);
+    padding-bottom: 1rem;
+}
+
+.hero {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.hero-txt {
+    width: 50%;
+    align-self: center;
+    color: #f5f5f5;
+    animation: slideInFromLeft 1s ease-in;
+}
+.hero-txt h1 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+.hero-txt p {
+    font-size: 1.3rem;
+    margin: 10px 0;
+}
+
+.hero-form {
+    position: relative;
+    /* width: 400px; */
+    width: 45%;
+    padding: 40px;
+    animation: slideInFromRight 1s ease-in;
+}
+
+.hero-form .form-control{
+    margin: 30px 0;
+}
+
+.hero-form input[type='text'], .hero-form input[type='email'] {
+    border: 0;
+    border-bottom: 1px solid #b4becb;
+    width: 100%;
+    padding: 3px;
+    font-size: 16px;
+}
+
+.hero-form input:focus {
+    outline: none;
+}
+
+.hero-form input[type='submit'] {
+    width: 100%;
+}
+
+#agree {
+    text-decoration: underline 2px;
+    color: var(--primary-color);
+}
+
+/* Features Section */
+.block-img img {
+    width: 300px;
+    height: 240px;
+}
+
+.features-container {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+
+.features h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.card-container {
+    margin: 10px auto;
+    width: 100%;
+}
+
+.block {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    padding: 30px;
+    align-items: center;
+}
+.block-txt h3 {
+    margin: 10px 0;
+    color: var(--tertiary-color);
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.embrace-txt{
+    order: 2;
+}
+#embrace {
+    order: 1;
+}
+.store-txt {
+    order: 2;
+}
+#store {
+    order: 1;
+}
+
+/* Footer Section */
+.foot-container {
+    width: 100%;
+    height: 100%;
+    background: var(--primary-color);
+    border-top-right-radius: 150px;
+    padding-top: 1rem;
+}
+
+.foot {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    color: #f5f5f5;
+}
+
+.bottom-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.foot-links {
+    list-style: none;
+}
+.foot-links li {
+    margin: 10px 0;
+}
+.foot-links a {
+    text-decoration: none;
+    margin-left: 10px;
+    color: #f5f5f5;
+}
+.foot-links img {
+    margin-right: 8px;
+}
+
+@media screen and (max-width: 850px) {
+    /* Hero Section */
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-txt {
+        width: 75%;
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+    }
+
+    .hero-form {
+        width: 75%;
+    }
+
+    /* Features Section */
+    .block {
+        width: 90%;
+    }
+
+    /* Footer Section */
+    .foot-container {
+        border-top-right-radius: 100px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    /* Hero Section */
+    .hero-container {
+        border-bottom-left-radius: 100px;
+    }
+
+    .hero {
+        padding-bottom: 1.5rem;
+    }
+    
+    .hero-txt {
+        width: 95%;
+    }
+    .hero-txt h1 {
+        font-size: 3rem;
+    }
+    .hero-txt p {
+        font-size: 1.1rem;
+    }
+    
+    .hero-form {
+        width: 95%;
+    }
+
+    /* Features Section */   
+    .features h2 {
+        font-size: 2.9rem;
+        font-weight: 700;
+    }
+
+    .block {
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: 40px;
+        justify-items: center;
+    }
+
+    .block-txt,
+    .block-img {
+        width: 80%;
+    }
+
+    .block-img img {
+        width: 220px;
+        height: 220px;
+    }
+
+    /* Footer Section */
+    .foot-container {
+    border-top-right-radius: 100px;
+    }
+
+    .foot {
+        grid-template-columns: 1fr;
+    }
+
+    /* .foot h1 {
+        position: relative;
+        left: 30px;
+    } */
+
+    .bottom-links {
+        position: relative;
+        left: -8px;
+        width: 80%;
+        grid-template-columns: 1fr 1fr;
+    }
+}
